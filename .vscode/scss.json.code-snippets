@@ -1,0 +1,9 @@
+{
+  "breakpoint": {
+    "prefix": "mq",
+    "body": [
+      "@include mq(sp) {}", 
+    ],
+    "description": "ブレイクポイント"
+  },
+}

@@ -1,0 +1,12 @@
+{
+  "picture": {
+    "prefix": "pic",
+    "body": [ 
+      "<picture>", 
+      "  <source media=\"(max-width: 767px)\" srcset=\"\">", 
+      "  <img src=\"\" alt=\"\">", 
+      "</picture>", 
+    ],
+    "description": "画像の出し分け"
+  }
+}

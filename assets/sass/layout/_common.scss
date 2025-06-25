@@ -1,0 +1,59 @@
+@charset "utf-8";
+
+/*----------------------------------------
+  @use
+----------------------------------------*/
+@use "foundation/" as *;
+
+/*----------------------------------------
+	共通部分
+----------------------------------------*/
+html {
+	font-size: 10px;
+	@include mq(pc) {
+		font-size: calc((100vw / 1280) * 10);
+	}
+	@include mq(sp) {
+		font-size: calc((100vw / 375) * 10);
+	}
+}
+
+body {
+	@include Gothic-Hira;
+	font-size: 1.6rem;
+	line-height: 1.8;
+	color: #000;
+}
+
+main {
+	display: block;
+}
+
+a {
+	color: #000;
+	outline: none;
+	text-decoration: none;
+	transition: .3s;
+
+	&:hover {
+		opacity: .7;
+	}
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+	font-weight: bold;
+}
+
+button {
+	color: #000;
+}
