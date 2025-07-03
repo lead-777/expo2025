@@ -16,7 +16,7 @@
   \***********************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   gsapAnimation: function() { return /* binding */ gsapAnimation; }\n/* harmony export */ });\nfunction gsapAnimation() {\n  \n}\n\n//# sourceURL=webpack://gulp/./assets/js/component/_gsapAnimation.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   gsapAnimation: function() { return /* binding */ gsapAnimation; }\n/* harmony export */ });\nfunction gsapAnimation() {\n  gsap.registerPlugin(ScrollTrigger);\n\ndocument.querySelectorAll('.js-rotate').forEach((el) => {\n  const rotationAmount = gsap.utils.random(10, 180);\n  gsap.to(el, {\n    rotation: rotationAmount,\n    ease: 'none',\n    scrollTrigger: {\n      trigger: el,\n      start: 'top bottom',   // 要素の上端が画面下に入ったら開始\n      end: 'bottom top',     // 要素の下端が画面上に出たら終了\n      scrub: 2            // スクロールと連動\n    }\n  });\n});\n}\n\n//# sourceURL=webpack://gulp/./assets/js/component/_gsapAnimation.js?");
 
 /***/ }),
 

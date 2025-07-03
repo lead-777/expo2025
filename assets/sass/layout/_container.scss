@@ -8,8 +8,8 @@
 /*----------------------------------------
 	l-container
 ----------------------------------------*/
-.l-container {
+.l-main {
+	position: relative;
 	display: block;
+	overflow: hidden;
 }
-
-@include mq(sp) {}

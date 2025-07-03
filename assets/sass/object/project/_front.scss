@@ -455,6 +455,9 @@
 						text-align: center;
 						border-radius: 10rem;
 					}
+					&.no-link{
+						pointer-events: none;
+					}
 					span{
 						display: block;
 						font-size: 1.6rem;
@@ -470,7 +473,6 @@
 ----------------------------------------*/
 .p-banner {
 	padding: 16rem 0 8rem;
-	overflow: hidden;
 	@include mq(sp) {
 		padding: 0 0 4rem;
 	}
@@ -481,15 +483,294 @@
 	&__head{
 		margin: 0 0 4rem;
 		opacity: 0;
-		&.is-active{
-			animation: 0.3s forwards cubic-bezier(0.99, 0, 1, 0.99) key-public-rockimpact;
-		}
 	}
 	&__foot{
 		max-width: 58rem;
 		margin: auto;
 		a{
 			display: block;
+		}
+	}
+}
+
+/*----------------------------------------
+	p-ill
+----------------------------------------*/
+.p-ill{
+	& > div{		
+		&:nth-child(1){
+			span{
+				&:nth-child(1){
+					top: vw(300);
+					left: vw(600);
+					width: vw(680);
+					@include mq(sp) {
+						top: 104rem;
+						left: 2rem;
+						width: 20rem;
+					}
+				}
+				&:nth-child(2){
+					top: vw(400);
+					left: vw(1300);
+					width: vw(680);
+					@include mq(sp) {
+						top: 28rem;
+						left: 30rem;
+						width: 20rem;
+					}
+				}
+				&:nth-child(3){
+					top: vw(140);
+					left: vw(1300);
+					width: vw(600);
+					@include mq(sp) {
+						top: 10rem;
+						left: 0rem;
+						width: 20rem;
+					}
+				}
+				&:nth-child(4){
+					top: vw(180);
+					left: vw(600);
+					width: vw(340);
+					@include mq(sp) {
+						top: 130rem;
+						left: 24rem;
+						width: 20rem;
+					}
+				}
+				&:nth-child(5){
+					top: vw(160);
+					left: vw(1100);
+					width: vw(280);
+					@include mq(sp) {
+						top: 20rem;
+						left: 30rem;
+						width: 10rem;
+					}
+				}
+				&:nth-child(6){
+					top: vw(620);
+					left: vw(1200);
+					width: vw(280);
+					@include mq(sp) {
+						top: 30rem;
+						left: 40rem;
+						width: 10rem;
+					}
+				}
+				&:nth-child(7){
+					top: vw(780);
+					left: vw(1600);
+					width: vw(280);
+					@include mq(sp) {
+						top: 110rem;
+						left: 1rem;
+						width: 10rem;
+					}
+				}
+			}
+		}
+		&:nth-child(2){
+			span{
+				&:nth-child(1){
+					top: vw(1600);
+					left: vw(-140);
+					width: vw(680);
+					@include mq(sp) {
+						top: 62rem;
+						left: 28rem;
+						width: 20rem;
+					}
+				}
+				&:nth-child(2){
+					top: vw(2100);
+					left: vw(100);
+					width: vw(580);
+					@include mq(sp) {
+						top: 56rem;
+						left: 32rem;
+						width: 16rem;
+					}
+				}
+				&:nth-child(3){
+					top: vw(1800);
+					left: vw(100);
+					width: vw(280);
+					@include mq(sp) {
+						top: 66rem;
+						left: 32rem;
+						width: 8rem;
+					}
+				}
+			}
+		}
+		&:nth-child(3){
+			span{
+				&:nth-child(1){
+					top: vw(2400);
+					left: vw(1300);
+					width: vw(680);
+					@include mq(sp) {
+						top: 160rem;
+						left: 30rem;
+						width: 20rem;
+					}
+				}
+				&:nth-child(2){
+					top: vw(2300);
+					left: vw(1300);
+					width: vw(580);
+					@include mq(sp) {
+						top: 156rem;
+						left: 40;
+						width: 20rem;
+					}
+				}
+				&:nth-child(3){
+					top: vw(2000);
+					left: vw(1600);
+					width: vw(280);
+					@include mq(sp) {
+						top: 180rem;
+						left: -4rem;
+						width: 16rem;
+					}
+				}
+			}
+		}
+		&:nth-child(4){
+			span{
+				&:nth-child(1){
+					top: vw(3400);
+					left: vw(-100);
+					width: vw(680);
+					@include mq(sp) {
+						top: 460rem;
+						left: -10rem;
+						width: 20rem;
+					}
+				}
+				&:nth-child(2){
+					top: vw(3820);
+					left: vw(-100);
+					width: vw(580);
+					@include mq(sp) {
+						top: 460rem;
+						left: 2rem;
+						width: 16rem;
+					}
+				}
+				&:nth-child(3){
+					top: vw(4100);
+					left: vw(100);
+					width: vw(280);
+					@include mq(sp) {
+						top: 470rem;
+						left: 32rem;
+						width: 16rem;
+					}
+				}
+			}
+		}
+		&:nth-child(5){
+			span{
+				&:nth-child(1){
+					top: vw(4600);
+					left: vw(1200);
+					width: vw(680);
+					@include mq(sp) {
+						top: 550rem;
+						left: -10rem;
+						width: 20rem;
+					}
+				}
+				&:nth-child(2){
+					top: vw(5100);
+					left: vw(1300);
+					width: vw(580);
+					@include mq(sp) {
+						top: 540rem;
+						left: 2rem;
+						width: 16rem;
+					}
+				}
+				&:nth-child(3){
+					top: vw(4700);
+					left: vw(1400);
+					width: vw(280);
+					@include mq(sp) {
+						top: 540rem;
+						left: 38rem;
+						width: 10rem;
+					}
+				}
+				&:nth-child(4){
+					top: vw(5100);
+					left: vw(1700);
+					width: vw(280);
+					@include mq(sp) {
+						top: 548rem;
+						left: 34rem;
+						width: 10rem;
+					}
+				}
+			}
+		}
+		&:nth-child(6){
+			@include mq(sp) {
+				display: none;
+			}
+			span{
+				&:nth-child(1){
+					top: vw(6900);
+					left: vw(20);
+					width: vw(680);
+				}
+				&:nth-child(2){
+					top: vw(6400);
+					left: vw(100);
+					width: vw(580);
+				}
+				&:nth-child(3){
+					top: vw(6200);
+					left: vw(80);
+					width: vw(280);
+				}
+				&:nth-child(4){
+					top: vw(6600);
+					left: vw(20);
+					width: vw(280);
+				}
+			}
+		}
+		&:nth-child(7){
+			@include mq(sp) {
+				display: none;
+			}
+			span{
+				&:nth-child(1){
+					top: vw(6100);
+					left: vw(1300);
+					width: vw(680);
+				}
+				&:nth-child(2){
+					top: vw(6500);
+					left: vw(1500);
+					width: vw(580);
+				}
+				&:nth-child(3){
+					top: vw(6200);
+					left: vw(1500);
+					width: vw(280);
+				}
+			}
+		}
+		span{
+			position: absolute;
+			display: block;
+			z-index: -1;
 		}
 	}
 }
