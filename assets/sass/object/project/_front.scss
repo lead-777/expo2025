@@ -365,14 +365,21 @@
 	}
 	&__head{
 		margin: 0 0 8rem;
+		@include mq(tl) {
+			margin: 0 0 4rem;
+		}
 		@include mq(sp) {
 			margin: 0 0 2.4rem;
 		}
 	}
 	&__main{
 		position: relative;
+		width: 100%;
 		aspect-ratio: 16 / 9;
 		margin: 0 0 8rem;
+		@include mq(tl) {
+			margin: 0 0 4rem;
+		}
 		@include mq(sp) {
 			margin: 0 0 2.4rem;
 		}

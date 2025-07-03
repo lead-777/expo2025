@@ -1358,6 +1358,11 @@ button {
 .p-movie__head {
   margin: 0 0 8rem;
 }
+@media screen and (max-width: 1024px) {
+  .p-movie__head {
+    margin: 0 0 4rem;
+  }
+}
 @media screen and (max-width: 767px) {
   .p-movie__head {
     margin: 0 0 2.4rem;
@@ -1365,8 +1370,14 @@ button {
 }
 .p-movie__main {
   position: relative;
+  width: 100%;
   aspect-ratio: 16/9;
   margin: 0 0 8rem;
+}
+@media screen and (max-width: 1024px) {
+  .p-movie__main {
+    margin: 0 0 4rem;
+  }
 }
 @media screen and (max-width: 767px) {
   .p-movie__main {
