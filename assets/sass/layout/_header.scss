@@ -9,10 +9,10 @@
 	l-header
 ----------------------------------------*/
 .l-header{
-  background: url(../img/bg-mv01.jpg) center / cover;
+  background: url(../img/bg-mv01.webp) center / cover;
   overflow: hidden;
   @include mq(sp) {
-    background: url(../img/bg-mv01_sp.jpg) center / cover;
+    background: url(../img/bg-mv01_sp.webp) center / cover;
     
   }
   &.is-active{

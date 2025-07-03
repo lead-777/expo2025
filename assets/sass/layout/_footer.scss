@@ -14,12 +14,12 @@
   align-items: center;
   justify-content: center;
   gap: 5.6rem;
-  background: url(../img/bg-footer01.jpg) center / cover;
+  background: url(../img/bg-footer01.webp) center / cover;
   padding: 2.4rem;
   @include mq(sp) {
     flex-direction: column;
     gap: 2.4rem;
-    background: url(../img/bg-footer01_sp.jpg) center / cover;
+    background: url(../img/bg-footer01_sp.webp) center / cover;
     padding: 4rem 2.4rem 10rem;
   }
   &__logo{
