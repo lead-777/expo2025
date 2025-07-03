@@ -421,10 +421,10 @@ th {
 ----------------------------------------*/
 @keyframes floating {
   0% {
-    transform: translateY(-2%);
+    transform: translateY(-1rem);
   }
   100% {
-    transform: translateY(2%);
+    transform: translateY(1rem);
   }
 }
 @keyframes key-public-rockimpact {
@@ -716,6 +716,7 @@ button {
 .l-header__foot li:nth-child(2) h2 {
   background: #e50053;
   margin: 0 0 -10rem auto;
+  rotate: 10deg;
 }
 @media screen and (max-width: 767px) {
   .l-header__foot li:nth-child(2) h2 {

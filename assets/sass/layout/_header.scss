@@ -166,6 +166,7 @@
         h2{
           background: #e50053;
           margin: 0 0 -10rem auto;
+          rotate: 10deg;
           @include mq(sp) {
             margin: 0 0 -2.8rem auto;
           }

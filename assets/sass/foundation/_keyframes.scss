@@ -5,10 +5,10 @@
 ----------------------------------------*/
 @keyframes floating {
   0% {
-    transform: translateY(-2%);
+    transform: translateY(-1rem);
   }
   100% {
-    transform: translateY(2%);
+    transform: translateY(1rem);
   }
 }
 
