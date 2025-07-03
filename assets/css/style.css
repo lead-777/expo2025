@@ -1159,11 +1159,11 @@ button {
     width: 10rem;
   }
 }
-.c-panel__user li h4 {
+.c-panel__user li h3, .c-panel__user li h4 {
   font-size: 1.8rem;
   text-align: center;
 }
-.c-panel__user li h4 span {
+.c-panel__user li h3 span, .c-panel__user li h4 span {
   display: block;
   font-size: 1rem;
   line-height: 1.4;
