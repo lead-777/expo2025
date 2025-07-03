@@ -26,7 +26,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \*************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   scrollAnimation: function() { return /* binding */ scrollAnimation; }\n/* harmony export */ });\nfunction scrollAnimation() {\n  $(window).on('load scroll',function (){\n\t\t$('.js-animation').each(function(){\n\t\t\tconst target = $(this).offset().top;\n\t\t\tconst scroll = $(window).scrollTop();\n\t\t\tconst height = $(window).height() / 1.2;\n\t\t\tif (scroll > target - height){\n\t\t\t\t$(this).addClass('is-active');\n\t\t\t}\n\t\t});\n\t});\n}\n\n//# sourceURL=webpack://gulp/./assets/js/component/_scrollAnimation.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   scrollAnimation: function() { return /* binding */ scrollAnimation; }\n/* harmony export */ });\nfunction scrollAnimation() {\n  $(window).on('load scroll',function (){\n\t\t$('.js-animation').each(function(){\n\t\t\tconst target = $(this).offset().top;\n\t\t\tconst scroll = $(window).scrollTop();\n\t\t\tconst height = $(window).height() / 1.2;\n\t\t\tif (scroll > target - height){\n\t\t\t\t$(this).addClass('is-active');\n\t\t\t}else{\n\t\t\t\t$(this).removeClass('is-active');\n\t\t\t}\n\t\t});\n\t});\n}\n\n//# sourceURL=webpack://gulp/./assets/js/component/_scrollAnimation.js?");
 
 /***/ }),
 

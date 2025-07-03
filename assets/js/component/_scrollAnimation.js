@@ -6,6 +6,8 @@ export function scrollAnimation() {
 			const height = $(window).height() / 1.2;
 			if (scroll > target - height){
 				$(this).addClass('is-active');
+			}else{
+				$(this).removeClass('is-active');
 			}
 		});
 	});
