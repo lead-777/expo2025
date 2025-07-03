@@ -6,8 +6,27 @@
 @use "foundation/" as *;
 
 /*----------------------------------------
-	u-animation
+	u-animation-up
 ----------------------------------------*/
-.u-animation {}
-
-@include mq(sp) {}
+.u-animation-up {
+	opacity: 0;
+	translate: 0 4%;
+	transition: 1s;
+	&.is-active{
+		opacity: 1;
+		translate: 0 0;
+	}
+}
+/*----------------------------------------
+	u-animation-scale
+----------------------------------------*/
+.u-animation-scale{
+	opacity: 0;
+	transform: translateY(4em) scale(.8);
+  transition: .6s cubic-bezier(.2,.8,.3,1.4);
+	&.is-active{
+		opacity: 1;
+    rotate: 0deg;
+    transform: translateY(0) scale(1);
+	}
+}

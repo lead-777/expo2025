@@ -16,7 +16,7 @@
   \*************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   scrollAnimation: function() { return /* binding */ scrollAnimation; }\n/* harmony export */ });\nfunction scrollAnimation() {\n  $(window).on('load scroll',function (){\n\t\t$('.js-animation').each(function(){\n\t\t\tconst target = $(this).offset().top;\n\t\t\tconst scroll = $(window).scrollTop();\n\t\t\tconst height = $(window).height();\n\t\t\tif (scroll > target - height){\n\t\t\t\t$(this).addClass('is-active');\n\t\t\t}\n\t\t});\n\t});\n}\n\n//# sourceURL=webpack://gulp/./assets/js/component/_scrollAnimation.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   scrollAnimation: function() { return /* binding */ scrollAnimation; }\n/* harmony export */ });\nfunction scrollAnimation() {\n  $(window).on('load scroll',function (){\n\t\t$('.js-animation').each(function(){\n\t\t\tconst target = $(this).offset().top;\n\t\t\tconst scroll = $(window).scrollTop();\n\t\t\tconst height = $(window).height() / 1.5;\n\t\t\tif (scroll > target - height){\n\t\t\t\t$(this).addClass('is-active');\n\t\t\t}\n\t\t});\n\t});\n}\n\n//# sourceURL=webpack://gulp/./assets/js/component/_scrollAnimation.js?");
 
 /***/ }),
 
@@ -30,13 +30,23 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./assets/js/component/_sponsor.js":
+/*!*****************************************!*\
+  !*** ./assets/js/component/_sponsor.js ***!
+  \*****************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   sponsor: function() { return /* binding */ sponsor; }\n/* harmony export */ });\nfunction sponsor() {\n  $(window).on('load scroll',function (){\n    const target = $('main').offset().top;\n    const scroll = $(window).scrollTop();\n    if (scroll > target){\n      $('.js-sponsor').addClass('is-active');\n    }else{\n      $('.js-sponsor').removeClass('is-active');\n    }\n\t});\n}\n\n//# sourceURL=webpack://gulp/./assets/js/component/_sponsor.js?");
+
+/***/ }),
+
 /***/ "./assets/js/script.js":
 /*!*****************************!*\
   !*** ./assets/js/script.js ***!
   \*****************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _component_scrollAnimation_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./component/_scrollAnimation.js */ \"./assets/js/component/_scrollAnimation.js\");\n/* harmony import */ var _component_scrollSmooth_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./component/_scrollSmooth.js */ \"./assets/js/component/_scrollSmooth.js\");\n\n\n\n(0,_component_scrollAnimation_js__WEBPACK_IMPORTED_MODULE_0__.scrollAnimation)();\n(0,_component_scrollSmooth_js__WEBPACK_IMPORTED_MODULE_1__.scrollSmooth)();\n\n//# sourceURL=webpack://gulp/./assets/js/script.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _component_scrollAnimation_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./component/_scrollAnimation.js */ \"./assets/js/component/_scrollAnimation.js\");\n/* harmony import */ var _component_scrollSmooth_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./component/_scrollSmooth.js */ \"./assets/js/component/_scrollSmooth.js\");\n/* harmony import */ var _component_sponsor_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./component/_sponsor.js */ \"./assets/js/component/_sponsor.js\");\n\n\n\n\n(0,_component_scrollAnimation_js__WEBPACK_IMPORTED_MODULE_0__.scrollAnimation)();\n(0,_component_scrollSmooth_js__WEBPACK_IMPORTED_MODULE_1__.scrollSmooth)();\n(0,_component_sponsor_js__WEBPACK_IMPORTED_MODULE_2__.sponsor)();\n\n//# sourceURL=webpack://gulp/./assets/js/script.js?");
 
 /***/ })
 

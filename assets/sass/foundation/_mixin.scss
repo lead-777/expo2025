@@ -6,7 +6,7 @@
 @use "sass:map";
 
 $breakpoint: (
-	pc: 'screen and (max-width: 1200px)',
+	pc: 'screen and (max-width: 1920px)',
 	tl: 'screen and (max-width: 1024px)',
 	sp: 'screen and (max-width: 767px)'
 );

@@ -8,6 +8,30 @@
 /*----------------------------------------
 	l-footer
 ----------------------------------------*/
-.l-footer {}
-
-@include mq(sp) {}
+.l-footer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5.6rem;
+  background: url(../img/bg-footer01.jpg) center / cover;
+  padding: 2.4rem;
+  @include mq(sp) {
+    flex-direction: column;
+    gap: 2.4rem;
+    background: url(../img/bg-footer01_sp.jpg) center / cover;
+    padding: 4rem 2.4rem 10rem;
+  }
+  &__logo{
+    width: 72rem;
+    @include mq(sp) {
+      width: 32rem;
+    }
+  }
+  &__qr{
+    width: 24rem;
+    @include mq(sp) {
+      width: 20rem;
+    }
+  }
+}

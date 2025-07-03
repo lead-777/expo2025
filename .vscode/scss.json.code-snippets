@@ -1,6 +1,6 @@
 {
   "breakpoint": {
-    "prefix": "mq",
+    "prefix": "ms",
     "body": [
       "@include mq(sp) {}", 
     ],

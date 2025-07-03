@@ -6,11 +6,489 @@
 @use "foundation/" as *;
 
 /*----------------------------------------
-	p-front-xxxx
+	c-panel
 ----------------------------------------*/
-.p-front-xxxx {}
+.c-panel{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 4rem;
+	margin: 0 -2rem;
+	@include mq(sp) {
+		gap: 2rem;
+		margin: 0;
+	}
+	&__item{
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+		gap: 1.6rem;
+		width: calc(33.3333% - 4rem);
+		padding: 2.4rem;
+		background: #fedf8f;
+		border-radius: 1.6rem;
+		overflow: hidden;
+		@include mq(sp) {
+			width: calc(50% - 1rem);
+			padding: 1.6rem;
+		}
+		&.-full{
+			width: calc(70% - 4rem);
+			@include mq(sp) {
+				width: 100%;
+			}
+		}
+	}
+	&__content{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+		flex: 1;
+		gap: 1.6rem;
+	}
+	&__heading{
+		text-align: center;
+		&:before{
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 50%;
+			width: 16.5rem;
+			height: 16.5rem;
+			background: #fff;
+			border-radius: 50%;
+			translate: -50% -50%;
+			@include mq(sp) {
+				width: 12rem;
+				height: 12rem;
+			}
+		}
+		span{
+			position: relative;
+			font-size: 2.8rem;
+			line-height: 1.4;
+			@include mq(sp) {
+				font-size: 1.8rem;
+			}
+		}
+	}
+	&__img{
+		position: relative;
+	}
+	&__user{
+		display: flex;
+		gap: 1.6rem;
+		li{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			gap: 1.6rem;
+			figure{
+				width: 16rem;
+				@include mq(sp) {
+					width: 10rem;
+				}
+			}
+			h4{
+				font-size: 1.8rem;
+				text-align: center;
+				span{
+					display: block;
+					font-size: 1rem;
+					line-height: 1.4;
+				}
+			}
+			p{
+				width: 14rem;
+				margin: auto;
+				@include mq(sp) {
+					width: 10rem;
+				}
+				a{
+					display: block;
+					&.website{
+						height: 51rem;
+						color: #fff;
+					}
+				}
+			}
+		}
+	}
+}
+/*----------------------------------------
+	p-character
+----------------------------------------*/
+.p-character {
+	padding: 16rem 0 0;
+	@include mq(sp) {
+		padding: 4rem 2.4rem 0;
+	}
+	&__container{
+		max-width: 100rem;
+		margin: auto;
+	}
+	&__head{
+		margin: 0 0 4rem;
+		@include mq(sp) {
+			margin: 0;
+		}
+	}
+	&__main{
+		display: grid;
+		gap: 8rem;
+		@include mq(sp) {
+			display: block;
+		}
+	}
+	&__item{
+		display: flex;
+		align-items: center;
+		gap: 5.6rem;
+		@include mq(sp) {
+			flex-direction: column-reverse;
+			gap: 2.4rem;
+			padding: 4rem 0;
+			border-bottom: 1px solid #004098;
+		}
+		&:nth-child(odd){
+			.p-character {
+				&__content{
+					grid-template-columns: 23rem max-content;
+					@include mq(sp) {
+						grid-template-columns: 12rem 1fr;
+					}
+				}
+				&__title{
+					grid-column: 2 / 3;
+					width: 32.9rem;
+					@include mq(sp) {
+						grid-column: 1 / 3;
+						grid-row: 1 / 2;
+						width: 60%;
+						margin: auto;
+					}
+				}
+				&__name{
+					grid-column: 2 / 3;
+					grid-row: 2 / 3;
+				}
+				&__user{
+					grid-column: 1 / 2;
+					grid-row: 1 / 3;
+					@include mq(sp) {
+						grid-row: 2 / 3;
+					}
+				}
+				&__img{
+					width: 50rem;
+					margin: 0 0 0 -14rem;
+					animation: floating 2s -1s ease-in-out infinite alternate-reverse;
+					@include mq(sp) {
+						width: 86%;
+						margin: 0;
+					}
+				}
+			}
+		}
+		&:nth-child(even){
+			flex-direction: row-reverse;
+			@include mq(sp) {
+				flex-direction: column-reverse;
+			}
+			.p-character {
+				&__content{
+					grid-template-columns: max-content 23rem;
+					@include mq(sp) {
+						grid-template-columns: 12rem 1fr;
+					}
+				}
+				&__title{
+					grid-column: 1 / 2;
+					width: 25.2rem;
+					@include mq(sp) {
+						grid-column: 1 / 3;
+						width: 46%;
+						margin: auto;
+					}
+				}
+				&__name{
+					grid-column: 1 / 2;
+					@include mq(sp) {
+						grid-column: 2 / 3;
+					}
+				}
+				&__user{
+					grid-column: 2 / 3;
+					@include mq(sp) {
+						grid-column: 1 / 2;
+						grid-row: 2 / 3;
+					}
+				}
+				&__img{
+					width: 38rem;
+					animation: floating 2s ease-in-out infinite alternate-reverse;
+					@include mq(sp) {
+						width: 70%;
+					}
+				}
+			}
+		}
+		&:last-child{
+			border-bottom: none;
+		}
+	}
+	&__content{
+		display: grid;
+		flex: 1;
+		gap: 2.4rem;
+		@include mq(sp) {
+			gap: 2.4rem 1.6rem;
+			width: 100%;
+		}
+	}
+	&__title{
+		grid-row: 1 / 2;
+	}
+	&__name{
+		grid-row: 2 / 3;
+		@include mq(sp) {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+		h4{
+			font-size: 5.3rem;
+			font-weight: bold;
+			line-height: 1.4;
+			margin: 0 0 .8rem;
+			@include mq(sp) {
+				font-size: 2.8rem;
+				margin: 0 0 .4rem;
+			}
+			span{
+				display: block;
+				font-size: 1.7rem;
+				@include mq(sp) {
+					font-size: 1.2rem;
+				}
+			}
+		}
+		p{
+			font-size: 2rem;
+			font-weight: bold;
+			@include mq(sp) {
+				font-size: 1.2rem;
+			}
+		}
+	}
+	&__user{
+		grid-row: 1 / 3;
+	}
+	&__profile{
+		display: grid;
+		grid-column: 1 / 3;
+		grid-row: 3 / 4;
+		gap: .8rem;
+		li{
+			display: flex;
+			gap: .8rem;
+			font-size: 1.6rem;
+			@include mq(sp) {
+				font-size: 1.4rem;
+			}
+			&:before{
+				content: "●";
+			}
+		}
+	}
+	&__button{
+		display: flex;
+		grid-column: 1 / 3;
+		grid-row: 4 / 5;
+		gap: 1.6rem;
+		@include mq(sp) {
+			justify-content: center;
+			gap: .8rem;
+		}
+		li{
+			width: 18rem;
+			@include mq(sp) {
+				width: 12rem;
+			}
+			a{
+				display: block;
+			}
+		}
+	}
+}
 
 /*----------------------------------------
-	p-front-xxxx
+	p-goods
 ----------------------------------------*/
-.p-front-xxxx {}
+.p-goods {
+	padding: 16rem 0 0;
+	@include mq(sp) {
+		padding: 4rem 2.4rem 0;
+	}
+	&__container{
+		max-width: 100rem;
+		margin: auto;
+	}
+	&__head{
+		margin: 0 0 4rem;
+		@include mq(sp) {
+			margin: 0 0 2.4rem;
+		}
+	}
+	&__main{
+		margin: 0 0 8rem;
+		@include mq(sp) {
+			margin: 0 0 2.4rem;
+		}
+	}
+}
+
+/*----------------------------------------
+	p-movie
+----------------------------------------*/
+.p-movie {
+	padding: 16rem 0 0;
+	@include mq(sp) {
+		padding: 8rem 2.4rem 0;
+	}
+	&__container{
+		max-width: 100rem;
+		margin: auto;
+	}
+	&__head{
+		margin: 0 0 4rem;
+		@include mq(sp) {
+			margin: 0 0 2.4rem;
+		}
+	}
+	&__main{
+		margin: 0 0 4rem;
+		iframe{
+			width: 100%;
+			height: 100%;
+			aspect-ratio: 16 / 9;
+		}
+	}
+}
+
+/*----------------------------------------
+	p-web
+----------------------------------------*/
+.p-web {
+	padding: 16rem 0 0;
+	@include mq(sp) {
+		padding: 8rem 2.4rem;
+	}
+	&__container{
+		max-width: 100rem;
+		margin: auto;
+	}
+	&__head{
+		margin: 0 0 4rem;
+	}
+}
+
+/*----------------------------------------
+	p-sponsor
+----------------------------------------*/
+.p-sponsor{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 34rem;
+	height: 100vh;
+	padding: 0 0 28.8rem;
+	overflow-y: scroll;
+	opacity: 0;
+	visibility: hidden;
+	transition: .4s;
+	@include mq(sp) {
+		position: static;
+		width: 100%;
+		height: auto;
+		padding: 0;
+	}
+	&.is-active{
+		opacity: 1;
+		visibility: visible;
+	}
+	&__container{
+		background: #e50053;
+		@include mq(sp) {
+			padding: 4rem;
+		}
+	}
+	&__head{
+		text-align: center;
+		padding: 4rem 2.4rem;
+		@include mq(sp) {
+			padding: 0 0 4rem;
+		}
+	}
+	&__main{
+		padding: 0 2.4rem 4rem 0;
+		@include mq(sp) {
+			padding: 0;
+		}
+		ul{
+			display: grid;
+			gap: 2.4rem;
+			li{
+				a{
+					display: block;
+					font-size: 3.8rem;
+					font-weight: bold;
+					line-height: 1.6;
+					background: #fadce9;
+					padding: 2.4rem;
+					border-radius: 0 10rem 10rem 0;
+					@include mq(sp) {
+						font-size: 3.2rem;
+						text-align: center;
+						border-radius: 10rem;
+					}
+					span{
+						display: block;
+						font-size: 1.6rem;
+					}
+				}
+			}
+		}
+	}
+}
+
+/*----------------------------------------
+	p-banner
+----------------------------------------*/
+.p-banner {
+	padding: 16rem 0 8rem;
+	@include mq(sp) {
+		padding: 0 0 4rem;
+	}
+	&__container{
+		max-width: 100rem;
+		margin: auto;
+	}
+	&__head{
+		margin: 0 0 4rem;
+		opacity: 0;
+		&.is-active{
+			animation: 0.3s forwards cubic-bezier(0.99, 0, 1, 0.99) key-public-rockimpact;
+		}
+	}
+	&__foot{
+		max-width: 58rem;
+		margin: auto;
+		a{
+			display: block;
+		}
+	}
+}

@@ -8,6 +8,14 @@
 /*----------------------------------------
 	l-nav
 ----------------------------------------*/
-.l-nav {}
-
-@include mq(sp) {}
+.l-nav {
+  display: none;
+  @include mq(sp) {
+    position: fixed;
+    display: block;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 1.6rem;
+  }
+}

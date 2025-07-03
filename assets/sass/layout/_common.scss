@@ -11,10 +11,10 @@
 html {
 	font-size: 10px;
 	@include mq(pc) {
-		font-size: calc((100vw / 1280) * 10);
+		font-size: calc((100vw / 1920) * 10);
 	}
 	@include mq(sp) {
-		font-size: calc((100vw / 375) * 10);
+		font-size: calc((100vw / 430) * 10);
 	}
 }
 

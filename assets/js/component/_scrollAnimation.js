@@ -3,7 +3,7 @@ export function scrollAnimation() {
 		$('.js-animation').each(function(){
 			const target = $(this).offset().top;
 			const scroll = $(window).scrollTop();
-			const height = $(window).height();
+			const height = $(window).height() / 1.5;
 			if (scroll > target - height){
 				$(this).addClass('is-active');
 			}
