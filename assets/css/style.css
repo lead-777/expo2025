@@ -970,6 +970,27 @@ button {
     padding: 1.6rem;
   }
 }
+.c-panel__item:nth-child(3n+2) {
+  transition-delay: 0.2s;
+}
+@media screen and (max-width: 767px) {
+  .c-panel__item:nth-child(3n+2) {
+    transition-delay: 0s;
+  }
+}
+.c-panel__item:nth-child(3n) {
+  transition-delay: 0.4s;
+}
+@media screen and (max-width: 767px) {
+  .c-panel__item:nth-child(3n) {
+    transition-delay: 0s;
+  }
+}
+@media screen and (max-width: 767px) {
+  .c-panel__item:nth-child(even) {
+    transition-delay: 0.2s;
+  }
+}
 .c-panel__item.-full {
   width: calc(70% - 4rem);
 }
