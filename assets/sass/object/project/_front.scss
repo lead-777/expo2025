@@ -470,6 +470,7 @@
 ----------------------------------------*/
 .p-banner {
 	padding: 16rem 0 8rem;
+	overflow: hidden;
 	@include mq(sp) {
 		padding: 0 0 4rem;
 	}

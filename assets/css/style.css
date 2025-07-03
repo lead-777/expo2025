@@ -851,6 +851,7 @@ button {
     bottom: 0;
     width: 100%;
     padding: 1.6rem;
+    z-index: 1;
   }
 }
 
@@ -1592,6 +1593,7 @@ button {
 ----------------------------------------*/
 .p-banner {
   padding: 16rem 0 8rem;
+  overflow: hidden;
 }
 @media screen and (max-width: 767px) {
   .p-banner {
