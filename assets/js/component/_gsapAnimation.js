@@ -25,9 +25,4 @@ export function gsapAnimation() {
       pin: true,
     }
   });
-
-  // リサイズ時にScrollTriggerを再計算
-  window.addEventListener("resize", () => {
-    ScrollTrigger.refresh();
-  });
 }
