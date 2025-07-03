@@ -1,6 +1,6 @@
 export function gsapAnimation() {
   gsap.registerPlugin(ScrollTrigger);
-  const isMobile = window.innerWidth < 1024;
+  const isMobile = window.innerWidth < 1025;
 
   document.querySelectorAll('.js-rotate').forEach((el) => {
     const rotationAmount = gsap.utils.random(10, 180);
