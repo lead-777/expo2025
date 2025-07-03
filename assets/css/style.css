@@ -1425,7 +1425,6 @@ button {
   left: 0;
   width: 34rem;
   height: 100vh;
-  padding: 0 0 28.8rem;
   overflow-y: scroll;
   z-index: 1;
   translate: -100% 0;
@@ -1439,7 +1438,6 @@ button {
     position: static;
     width: 100%;
     height: auto;
-    padding: 0;
     translate: 0 0;
   }
 }
@@ -1615,6 +1613,7 @@ button {
 }
 .p-sponsor__container {
   background: #e50053;
+  padding: 0 0 28.8rem;
 }
 @media screen and (max-width: 767px) {
   .p-sponsor__container {

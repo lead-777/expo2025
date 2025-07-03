@@ -422,7 +422,6 @@
 	left: 0;
 	width: 34rem;
 	height: 100vh;
-	padding: 0 0 28.8rem;
 	overflow-y: scroll;
 	z-index: 1;
 	translate: -100% 0;
@@ -434,7 +433,6 @@
 		position: static;
 		width: 100%;
 		height: auto;
-		padding: 0;
 		translate: 0 0;
 	}
 	&::-webkit-scrollbar{
@@ -463,6 +461,7 @@
 	}
 	&__container{
 		background: #e50053;
+		padding: 0 0 28.8rem;
 		@include mq(sp) {
 			padding: 4rem;
 		}
