@@ -1348,7 +1348,6 @@ button {
 }
 @media screen and (max-width: 767px) {
   .p-movie {
-    min-height: 100vh;
     padding: 8rem 2.4rem 0;
   }
 }
@@ -1361,7 +1360,7 @@ button {
 }
 @media screen and (max-width: 767px) {
   .p-movie__head {
-    margin: 0 0 4rem;
+    margin: 0 0 2.4rem;
   }
 }
 .p-movie__main {
@@ -1373,7 +1372,7 @@ button {
 @media screen and (max-width: 767px) {
   .p-movie__main {
     scale: 1;
-    margin: 0 0 4rem;
+    margin: 0 0 2.4rem;
   }
 }
 .p-movie__main iframe {
@@ -1401,6 +1400,11 @@ button {
 }
 .p-web__head {
   margin: 0 0 4rem;
+}
+@media screen and (max-width: 767px) {
+  .p-web__head {
+    margin: 0 0 2.4rem;
+  }
 }
 
 /*----------------------------------------
@@ -1892,7 +1896,7 @@ button {
 }
 @media screen and (max-width: 767px) {
   .p-ill > div:nth-child(5) span:nth-child(1) {
-    top: 560rem;
+    top: 540rem;
     left: -10rem;
     width: 20rem;
   }
@@ -1904,7 +1908,7 @@ button {
 }
 @media screen and (max-width: 767px) {
   .p-ill > div:nth-child(5) span:nth-child(2) {
-    top: 556rem;
+    top: 536rem;
     left: 2rem;
     width: 16rem;
   }
@@ -1916,7 +1920,7 @@ button {
 }
 @media screen and (max-width: 767px) {
   .p-ill > div:nth-child(5) span:nth-child(3) {
-    top: 572rem;
+    top: 552rem;
     left: 38rem;
     width: 10rem;
   }
@@ -1928,9 +1932,14 @@ button {
 }
 @media screen and (max-width: 767px) {
   .p-ill > div:nth-child(5) span:nth-child(4) {
-    top: 564rem;
-    left: 34rem;
+    top: 544rem;
+    left: 31rem;
     width: 10rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .p-ill > div:nth-child(6) {
+    display: none;
   }
 }
 .p-ill > div:nth-child(6) span:nth-child(1) {
@@ -1981,8 +1990,13 @@ button {
     width: 4rem;
   }
 }
+@media screen and (max-width: 767px) {
+  .p-ill > div:nth-child(7) {
+    display: none;
+  }
+}
 .p-ill > div:nth-child(7) span:nth-child(1) {
-  top: calc(7200 / 1920 * 100vw);
+  top: calc(6900 / 1920 * 100vw);
   left: calc(1300 / 1920 * 100vw);
   width: calc(680 / 1920 * 100vw);
 }
@@ -1994,7 +2008,7 @@ button {
   }
 }
 .p-ill > div:nth-child(7) span:nth-child(2) {
-  top: calc(7600 / 1920 * 100vw);
+  top: calc(7300 / 1920 * 100vw);
   left: calc(1500 / 1920 * 100vw);
   width: calc(580 / 1920 * 100vw);
 }
@@ -2006,7 +2020,7 @@ button {
   }
 }
 .p-ill > div:nth-child(7) span:nth-child(3) {
-  top: calc(7300 / 1920 * 100vw);
+  top: calc(7000 / 1920 * 100vw);
   left: calc(1500 / 1920 * 100vw);
   width: calc(280 / 1920 * 100vw);
 }

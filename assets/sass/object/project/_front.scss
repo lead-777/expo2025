@@ -357,7 +357,6 @@
 .p-movie {
 	padding: 16rem 0 0;
 	@include mq(sp) {
-		min-height: 100vh;
 		padding: 8rem 2.4rem 0;
 	}
 	&__container{
@@ -367,7 +366,7 @@
 	&__head{
 		margin: 0 0 8rem;
 		@include mq(sp) {
-			margin: 0 0 4rem;
+			margin: 0 0 2.4rem;
 		}
 	}
 	&__main{
@@ -377,7 +376,7 @@
 		scale: .8;
 		@include mq(sp) {
 			scale: 1;
-			margin: 0 0 4rem;
+			margin: 0 0 2.4rem;
 		}
 		iframe{
 			position: absolute;
@@ -403,6 +402,9 @@
 	}
 	&__head{
 		margin: 0 0 4rem;
+		@include mq(sp) {
+			margin: 0 0 2.4rem;
+		}
 	}
 }
 
@@ -721,7 +723,7 @@
 					left: vw(1200);
 					width: vw(680);
 					@include mq(sp) {
-						top: 560rem;
+						top: 540rem;
 						left: -10rem;
 						width: 20rem;
 					}
@@ -731,7 +733,7 @@
 					left: vw(1300);
 					width: vw(580);
 					@include mq(sp) {
-						top: 556rem;
+						top: 536rem;
 						left: 2rem;
 						width: 16rem;
 					}
@@ -741,7 +743,7 @@
 					left: vw(1400);
 					width: vw(280);
 					@include mq(sp) {
-						top: 572rem;
+						top: 552rem;
 						left: 38rem;
 						width: 10rem;
 					}
@@ -751,14 +753,17 @@
 					left: vw(1700);
 					width: vw(280);
 					@include mq(sp) {
-						top: 564rem;
-						left: 34rem;
+						top: 544rem;
+						left: 31rem;
 						width: 10rem;
 					}
 				}
 			}
 		}
 		&:nth-child(6){
+			@include mq(sp) {
+				display: none;
+			}
 			span{
 				&:nth-child(1){
 					top: vw(8400);
@@ -803,9 +808,12 @@
 			}
 		}
 		&:nth-child(7){
+			@include mq(sp) {
+				display: none;
+			}
 			span{
 				&:nth-child(1){
-					top: vw(7200);
+					top: vw(6900);
 					left: vw(1300);
 					width: vw(680);
 					@include mq(sp) {
@@ -815,7 +823,7 @@
 					}
 				}
 				&:nth-child(2){
-					top: vw(7600);
+					top: vw(7300);
 					left: vw(1500);
 					width: vw(580);
 					@include mq(sp) {
@@ -825,7 +833,7 @@
 					}
 				}
 				&:nth-child(3){
-					top: vw(7300);
+					top: vw(7000);
 					left: vw(1500);
 					width: vw(280);
 					@include mq(sp) {
