@@ -364,13 +364,17 @@
 		margin: auto;
 	}
 	&__head{
-		margin: 0 0 4rem;
+		margin: 0 0 8rem;
 		@include mq(sp) {
-			margin: 0 0 2.4rem;
+			margin: 0 0 4rem;
 		}
 	}
 	&__main{
-		margin: 0 0 4rem;
+		scale: .8;
+		margin: 0 0 8rem;
+		@include mq(sp) {
+			margin: 0 0 4rem;
+		}
 		iframe{
 			width: 100%;
 			height: 100%;
@@ -711,7 +715,7 @@
 					left: vw(1200);
 					width: vw(680);
 					@include mq(sp) {
-						top: 550rem;
+						top: 560rem;
 						left: -10rem;
 						width: 20rem;
 					}
@@ -721,7 +725,7 @@
 					left: vw(1300);
 					width: vw(580);
 					@include mq(sp) {
-						top: 540rem;
+						top: 556rem;
 						left: 2rem;
 						width: 16rem;
 					}
@@ -731,7 +735,7 @@
 					left: vw(1400);
 					width: vw(280);
 					@include mq(sp) {
-						top: 540rem;
+						top: 572rem;
 						left: 38rem;
 						width: 10rem;
 					}
@@ -741,7 +745,7 @@
 					left: vw(1700);
 					width: vw(280);
 					@include mq(sp) {
-						top: 548rem;
+						top: 564rem;
 						left: 34rem;
 						width: 10rem;
 					}
@@ -749,51 +753,80 @@
 			}
 		}
 		&:nth-child(6){
-			@include mq(sp) {
-				display: none;
-			}
 			span{
 				&:nth-child(1){
-					top: vw(6900);
+					top: vw(8400);
 					left: vw(20);
 					width: vw(680);
+					@include mq(sp) {
+						top: 644rem;
+						left: -2rem;
+						width: 10rem;
+					}
 				}
 				&:nth-child(2){
-					top: vw(6400);
+					top: vw(7900);
 					left: vw(100);
 					width: vw(580);
+					@include mq(sp) {
+						top: 634rem;
+						left: -2rem;
+						width: 20rem;
+					}
 				}
 				&:nth-child(3){
-					top: vw(6200);
+					top: vw(7700);
 					left: vw(80);
 					width: vw(280);
+					@include mq(sp) {
+						top: 641rem;
+						left: 3rem;
+						width: 6rem;
+					}
 				}
 				&:nth-child(4){
-					top: vw(6600);
+					top: vw(8100);
 					left: vw(20);
 					width: vw(280);
+					@include mq(sp) {
+						top: 646rem;
+						left: 7rem;
+						width: 4rem;
+					}
 				}
 			}
 		}
 		&:nth-child(7){
-			@include mq(sp) {
-				display: none;
-			}
 			span{
 				&:nth-child(1){
-					top: vw(6100);
+					top: vw(7200);
 					left: vw(1300);
 					width: vw(680);
+					@include mq(sp) {
+						top: 654rem;
+						left: 30rem;
+						width: 20rem;
+					}
 				}
 				&:nth-child(2){
-					top: vw(6500);
+					top: vw(7600);
 					left: vw(1500);
 					width: vw(580);
+					@include mq(sp) {
+						top: 650rem;
+						left: 28rem;
+						width: 10rem;
+					}
 				}
 				&:nth-child(3){
-					top: vw(6200);
+					top: vw(7300);
 					left: vw(1500);
 					width: vw(280);
+					@include mq(sp) {
+						top: 658rem;
+						left: 39rem;
+						width: 6rem;
+					}
 				}
 			}
 		}
