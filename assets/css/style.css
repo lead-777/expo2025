@@ -1348,6 +1348,7 @@ button {
 }
 @media screen and (max-width: 767px) {
   .p-movie {
+    min-height: 100vh;
     padding: 8rem 2.4rem 0;
   }
 }

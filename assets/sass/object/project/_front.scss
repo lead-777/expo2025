@@ -357,6 +357,7 @@
 .p-movie {
 	padding: 16rem 0 0;
 	@include mq(sp) {
+		min-height: 100vh;
 		padding: 8rem 2.4rem 0;
 	}
 	&__container{
