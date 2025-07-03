@@ -1629,7 +1629,7 @@ button {
 }
 .p-sponsor__main ul li a {
   display: block;
-  font-size: 3.8rem;
+  font-size: 3.2rem;
   font-weight: bold;
   line-height: 1.6;
   background: #fadce9;
@@ -1638,7 +1638,7 @@ button {
 }
 @media screen and (max-width: 767px) {
   .p-sponsor__main ul li a {
-    font-size: 3.2rem;
+    font-size: 2.4rem;
     text-align: center;
     border-radius: 10rem;
   }
