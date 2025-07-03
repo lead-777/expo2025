@@ -1,6 +1,6 @@
 export function gsapAnimation() {
   gsap.registerPlugin(ScrollTrigger);
-  const isMobile = window.innerWidth < 768;
+  const isMobile = window.innerWidth < 1024;
 
   document.querySelectorAll('.js-rotate').forEach((el) => {
     const rotationAmount = gsap.utils.random(10, 180);
@@ -21,7 +21,7 @@ export function gsapAnimation() {
       scale: 1.13,
       scrollTrigger: {
         trigger: ".js-zoom-section",
-        start: "top top",
+        start: "center center",
         end: "+=100%",
         scrub: 1,
         pin: true,

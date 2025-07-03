@@ -1367,11 +1367,9 @@ button {
   position: relative;
   aspect-ratio: 16/9;
   margin: 0 0 8rem;
-  scale: 0.8;
 }
 @media screen and (max-width: 767px) {
   .p-movie__main {
-    scale: 1;
     margin: 0 0 2.4rem;
   }
 }
