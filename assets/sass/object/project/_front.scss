@@ -373,9 +373,10 @@
 	&__main{
 		position: relative;
 		aspect-ratio: 16 / 9;
-		scale: .8;
 		margin: 0 0 8rem;
+		scale: .8;
 		@include mq(sp) {
+			scale: 1;
 			margin: 0 0 4rem;
 		}
 		iframe{
