@@ -619,7 +619,6 @@ button {
   width: 110rem;
   margin: auto;
   opacity: 0;
-  scale: 0.5;
   transition: 0.4s cubic-bezier(0.2, 0.8, 0.3, 1.4);
 }
 @media screen and (max-width: 767px) {
