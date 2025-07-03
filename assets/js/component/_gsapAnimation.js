@@ -9,9 +9,9 @@ export function gsapAnimation() {
       ease: 'none',
       scrollTrigger: {
         trigger: el,
-        start: 'top bottom',   // 要素の上端が画面下に入ったら開始
-        end: 'bottom top',     // 要素の下端が画面上に出たら終了
-        scrub: 2            // スクロールと連動
+        start: 'top bottom',
+        end: 'bottom top',
+        scrub: 2
       }
     });
   });
@@ -23,7 +23,7 @@ export function gsapAnimation() {
         trigger: ".js-zoom-section",
         start: "center center",
         end: "+=100%",
-        scrub: 1,
+        scrub: 2,
         pin: true,
       }
     });
