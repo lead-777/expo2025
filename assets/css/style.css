@@ -1405,6 +1405,8 @@ button {
   opacity: 0;
   visibility: hidden;
   transition: 0.4s;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 @media screen and (max-width: 767px) {
   .p-sponsor {
@@ -1413,6 +1415,9 @@ button {
     height: auto;
     padding: 0;
   }
+}
+.p-sponsor::-webkit-scrollbar {
+  display: none;
 }
 .p-sponsor.is-active {
   opacity: 1;

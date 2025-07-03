@@ -410,11 +410,16 @@
 	opacity: 0;
 	visibility: hidden;
 	transition: .4s;
+	scrollbar-width: none;
+	-ms-overflow-style: none;
 	@include mq(sp) {
 		position: static;
 		width: 100%;
 		height: auto;
 		padding: 0;
+	}
+	&::-webkit-scrollbar{
+		display: none;
 	}
 	&.is-active{
 		opacity: 1;
