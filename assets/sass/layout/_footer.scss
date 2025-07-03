@@ -16,6 +16,7 @@
   gap: 5.6rem;
   background: url(../img/bg-footer01.webp) center / cover;
   padding: 2.4rem;
+  z-index: 1;
   @include mq(sp) {
     flex-direction: column;
     gap: 2.4rem;
