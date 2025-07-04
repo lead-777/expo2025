@@ -1704,7 +1704,7 @@ button {
 }
 @media screen and (max-width: 767px) {
   .p-banner {
-    padding: 0 0 4rem;
+    padding: 2.4rem 0 4rem;
   }
 }
 .p-banner__container {
@@ -1712,8 +1712,9 @@ button {
   margin: auto;
 }
 .p-banner__head {
+  display: grid;
+  gap: 4rem;
   margin: 0 0 4rem;
-  opacity: 0;
 }
 .p-banner__foot {
   max-width: 58rem;

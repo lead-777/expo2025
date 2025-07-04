@@ -537,15 +537,16 @@
 .p-banner {
 	padding: 16rem 0 8rem;
 	@include mq(sp) {
-		padding: 0 0 4rem;
+		padding: 2.4rem 0 4rem;
 	}
 	&__container{
 		max-width: 100rem;
 		margin: auto;
 	}
 	&__head{
+		display: grid;
+		gap: 4rem;
 		margin: 0 0 4rem;
-		opacity: 0;
 	}
 	&__foot{
 		max-width: 58rem;
