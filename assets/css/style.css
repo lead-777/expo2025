@@ -640,7 +640,7 @@ button {
     width: 100%;
   }
 }
-.l-header__main p {
+.l-header__main div {
   position: absolute;
   top: 67rem;
   left: 50.4%;
@@ -652,7 +652,7 @@ button {
   transition-delay: 0.4s;
 }
 @media screen and (max-width: 767px) {
-  .l-header__main p {
+  .l-header__main div {
     top: 25rem;
     left: 54%;
     width: 5.4rem;
