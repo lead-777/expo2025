@@ -573,7 +573,7 @@ button {
   scale: 1;
   opacity: 1;
 }
-.l-header.is-active .l-header__main p {
+.l-header.is-active .l-header__main div {
   scale: 1;
   opacity: 1;
 }
