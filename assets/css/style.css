@@ -1697,6 +1697,81 @@ button {
 }
 
 /*----------------------------------------
+	p-message
+----------------------------------------*/
+.p-message {
+  padding: 16rem 0 0;
+}
+@media screen and (max-width: 767px) {
+  .p-message {
+    padding: 2.4rem 0 0;
+  }
+}
+.p-message__container {
+  max-width: 100rem;
+  margin: auto;
+}
+.p-message__head {
+  display: grid;
+  gap: 4rem;
+}
+
+/*----------------------------------------
+	p-interview
+----------------------------------------*/
+.p-interview {
+  padding: 16rem 0 0;
+}
+@media screen and (max-width: 767px) {
+  .p-interview {
+    padding: 2.4rem 2.4rem 0;
+  }
+}
+.p-interview__container {
+  max-width: 100rem;
+  background: #fff;
+  padding: 4rem;
+  margin: auto;
+  border: 0.4rem solid #e50053;
+}
+@media screen and (max-width: 767px) {
+  .p-interview__container {
+    padding: 2.4rem;
+  }
+}
+.p-interview__head {
+  margin: 0 0 4rem;
+}
+.p-interview__main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.4rem;
+}
+@media screen and (max-width: 767px) {
+  .p-interview__main {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.p-interview__video img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+.p-interview__name {
+  font-weight: bold;
+  text-align: center;
+  margin: 1.6rem 0 0;
+}
+@media screen and (max-width: 767px) {
+  .p-interview__name {
+    margin: 0.8rem 0 0;
+  }
+}
+.p-interview__name span {
+  font-size: 2rem;
+}
+
+/*----------------------------------------
 	p-banner
 ----------------------------------------*/
 .p-banner {
