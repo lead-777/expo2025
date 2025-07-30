@@ -551,7 +551,7 @@
 	p-interview
 ----------------------------------------*/
 .p-interview{
-	padding: 16rem 0 0;
+	padding: 8rem 0 0;
 	@include mq(sp) {
 		padding: 2.4rem 2.4rem 0;
 	}
@@ -599,7 +599,7 @@
 	p-banner
 ----------------------------------------*/
 .p-banner {
-	padding: 16rem 0 8rem;
+	padding: 8rem 0;
 	@include mq(sp) {
 		padding: 2.4rem 0 4rem;
 	}

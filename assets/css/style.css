@@ -1720,7 +1720,7 @@ button {
 	p-interview
 ----------------------------------------*/
 .p-interview {
-  padding: 16rem 0 0;
+  padding: 8rem 0 0;
 }
 @media screen and (max-width: 767px) {
   .p-interview {
@@ -1775,7 +1775,7 @@ button {
 	p-banner
 ----------------------------------------*/
 .p-banner {
-  padding: 16rem 0 8rem;
+  padding: 8rem 0;
 }
 @media screen and (max-width: 767px) {
   .p-banner {

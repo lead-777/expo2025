@@ -15,6 +15,19 @@ export function gsapAnimation() {
       }
     });
   });
+  document.querySelectorAll('.js-move-x').forEach((el) => {
+    const moveX = gsap.utils.random(-100, 100);
+    gsap.to(el, {
+      x: moveX,
+      ease: 'none',
+      scrollTrigger: {
+        trigger: el,
+        start: 'top bottom',
+        end: 'bottom top',
+        scrub: 2
+      }
+    });
+  });
 
   if (!isMobile) {
     gsap.to(".js-zoom-target", {
